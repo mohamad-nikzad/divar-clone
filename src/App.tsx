@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import { Home, Login, Register } from "./routes";
+import "./assets/styles/global.css";
 
 function App() {
   return (
