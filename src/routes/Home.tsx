@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import { themeAtom, userAtom } from "@/atoms";
 import { useAtom } from "jotai";
 import { Link } from "react-router-dom";
@@ -28,7 +27,6 @@ const Home = () => {
             type="checkbox"
             className="toggle toggle-secondary"
             checked={theme === "dark" ? true : false}
-            // value={}
             onChange={() => toggleTheme()}
           />
         </label>

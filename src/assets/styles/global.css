@@ -16,4 +16,8 @@
   .ltr {
     direction: ltr;
   }
+
+  .btn.loading::before {
+    @apply mr-0 !ml-2;
+  }
 }
