@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "email": "mrdante16@gmail.com",
+      "password": "$2a$10$.1lkYvXWJvjm/3U8AnZuy.tq1OgznYL6DNfaRKqkJ5aia/tVns68a",
+      "id": 1
+    },
+    {
+      "email": "mohamadnikzad1377@gmail.com",
+      "password": "$2a$10$vFH9YPKSgbLkvmiEDIDtTuTsknLb9oe4V2eum6hjsV64BfTmR7fby",
+      "id": 2
+    },
+    {
+      "email": "test@gmail.com",
+      "password": "$2a$10$G67FwbZVr5MwVQmPPdm3budeCfEQQew32MngNImInFhqWG7z0DZSi",
+      "id": 3
+    },
+    {
+      "email": "t@gmail.com",
+      "password": "$2a$10$rMs4HyFN.XSjyY0PkWCeguaZf3bE0MvyEy1Hq67ghzcde1XM.RtC6",
+      "id": 4
+    },
+    {
+      "email": "test1@gmail.com",
+      "password": "$2a$10$YYbidOjshrzDbobffl6Mle3N5Jh/A5lmnWZ2YmXVZayi7sVjli9HW",
+      "name": "test",
+      "id": 5
+    },
+    {
+      "email": "mrnikzad@gmial.com",
+      "password": "$2a$10$x1N9b8jAaJk2lJeLJNDKSOFEioRcd/3WaSkxp8Oq8VphNh84wV2QK",
+      "name": "nikzad",
+      "id": 6
+    }
+  ],
+  "posts": []
+}
