@@ -31,6 +31,12 @@
       "password": "$2a$10$x1N9b8jAaJk2lJeLJNDKSOFEioRcd/3WaSkxp8Oq8VphNh84wV2QK",
       "name": "nikzad",
       "id": 6
+    },
+    {
+      "email": "1@gmail.com",
+      "password": "$2a$10$uqMsxfldpsQEj2f4bqztc.ru4rOE3Da4DMwDllaho8jwx.lSzYvWu",
+      "name": "Dante",
+      "id": 7
     }
   ],
   "posts": []
