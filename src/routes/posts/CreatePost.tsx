@@ -4,13 +4,13 @@ import { DevicePhoneMobileIcon } from "@heroicons/react/24/outline";
 import { useAtom } from "jotai";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Navigate, useNavigate } from "react-router-dom";
-import "leaflet/dist/leaflet.css";
 import { createPostType } from "@/types/post";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { createPostSchema } from "@/assets/constants";
 import { useMutation, useQueryClient } from "react-query";
 import { postRequestHandler } from "@/libs/api";
 import clsx from "clsx";
+import { Suspense } from "react";
 
 const CreatePost = () => {
   const [user] = useAtom(userAtom);
@@ -25,7 +25,7 @@ const CreatePost = () => {
       onSuccess: () => {
         navigate("/");
         // refetch posts list
-        queryClient.invalidateQueries("posts");
+        queryClient.refetchQueries("posts");
       },
     }
   );
@@ -52,12 +52,15 @@ const CreatePost = () => {
           requiredMark
           leftElement={<DevicePhoneMobileIcon className="w-6 h-6" />}
         />
-        <LocationArea
-          control={control}
-          name="location"
-          label="نقشه"
-          requiredMark
-        />
+        {/* lazy loaded component that containing map for reducing bundle size */}
+        <Suspense>
+          <LocationArea
+            control={control}
+            name="location"
+            label="نقشه"
+            requiredMark
+          />
+        </Suspense>
         <Textarea
           name="address"
           control={control}

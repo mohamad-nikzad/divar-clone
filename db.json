@@ -152,40 +152,16 @@
       "description": "تست تست تست",
       "userId": 7,
       "author": "Dante",
-      "id": 9
-    },
-    {
-      "phonenumber": "09394261051",
-      "location": {
-        "latitude": 35.72129098165948,
-        "longitude": 51.33214186993428
-      },
-      "address": "تست آدرس",
-      "description": "تست تست تست",
-      "userId": 7,
-      "author": "Dante",
       "id": 10
     },
     {
-      "phonenumber": "09394261051",
+      "description": "qwe",
+      "address": "qwe qw",
       "location": {
-        "latitude": 35.72129098165948,
-        "longitude": 51.33214186993428
+        "latitude": 35.71933983176265,
+        "longitude": 51.31003189191689
       },
-      "address": "تست آدرس",
-      "description": "تست تست تست",
-      "userId": 7,
-      "author": "Dante",
-      "id": 11
-    },
-    {
       "phonenumber": "09394261051",
-      "location": {
-        "latitude": 35.72129098165948,
-        "longitude": 51.33214186993428
-      },
-      "address": "تست آدرس",
-      "description": "تست تست تست",
       "userId": 7,
       "author": "Dante",
       "id": 12

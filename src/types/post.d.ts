@@ -5,8 +5,8 @@ export type Post = {
   description?: string;
   id: number;
   location: {
-    lat: number;
-    lang: number;
+    latitude: number;
+    longitude: number;
   };
   phonenumber: string;
   userId: number;

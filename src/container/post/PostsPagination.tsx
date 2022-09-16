@@ -8,7 +8,6 @@ interface Props {
 }
 
 const PostsPagination: FC<Props> = ({ paginationData, handlePagination }) => {
-  console.log("re render");
   return (
     <div className="w-full mt-4">
       <div className="justify-center btn-group ltr">
