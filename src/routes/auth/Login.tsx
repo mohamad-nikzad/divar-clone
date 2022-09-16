@@ -8,7 +8,7 @@ import { AxiosResponse } from "axios";
 import { useAtom } from "jotai";
 import { userAtom } from "@/atoms/userAtom";
 import { loginFields } from "@/types";
-import { authHandler } from "@/libs/api";
+import { postRequestHandler } from "@/libs/api";
 import { loginValidationSchema } from "@/assets/constants";
 import { Link } from "react-router-dom";
 import clsx from "clsx";
@@ -19,7 +19,7 @@ const Login = () => {
     resolver: yupResolver(loginValidationSchema),
   });
   const login = useMutation(
-    (body: loginFields) => authHandler("/login", body),
+    (body: loginFields) => postRequestHandler("/login", body),
     {
       onSuccess: (res: AxiosResponse) => {
         const user = { accessToken: res.data.accessToken, ...res.data.user };

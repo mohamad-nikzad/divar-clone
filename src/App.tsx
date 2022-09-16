@@ -1,6 +1,13 @@
 import { Route, Routes } from "react-router-dom";
-import { Auth, Dashboard, Home, Login, Register } from "./routes";
-import "./assets/styles/global.css";
+import {
+  Auth,
+  PostsRoute,
+  Home,
+  Login,
+  Register,
+  CreatePost,
+  ShowPost,
+} from "./routes";
 import { useAtom } from "jotai";
 import { useEffect } from "react";
 import { themeAtom, userAtom } from "@/atoms";
@@ -21,7 +28,10 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="register" element={<Register />} />
         </Route>
-        <Route path="dashboard" element={<Dashboard />}></Route>
+        <Route path="/post" element={<PostsRoute />}>
+          <Route path="create" element={<CreatePost />} />
+          <Route path=":id" element={<ShowPost />} />
+        </Route>
       </Routes>
     </div>
   );

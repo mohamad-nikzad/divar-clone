@@ -7,12 +7,12 @@ import {
   UserCircleIcon,
 } from "@heroicons/react/24/outline";
 import { yupResolver } from "@hookform/resolvers/yup";
-import { AxiosError, AxiosResponse } from "axios";
+import { AxiosResponse } from "axios";
 import clsx from "clsx";
 import { useAtom } from "jotai";
 import { useForm, SubmitHandler } from "react-hook-form";
 import { useMutation } from "react-query";
-import { authHandler } from "@/libs/api";
+import { postRequestHandler } from "@/libs/api";
 import { registerFields } from "@/types";
 import { Link } from "react-router-dom";
 
@@ -22,7 +22,7 @@ const Register = () => {
     resolver: yupResolver(registerValidationSchema),
   });
   const { mutate: registerUser, isLoading } = useMutation(
-    (body: registerFields) => authHandler("/register", body),
+    (body: registerFields) => postRequestHandler("/register", body),
     {
       onSuccess: (res: AxiosResponse) => {
         const user = { accessToken: res.data.accessToken, ...res.data.user };

@@ -37,7 +37,158 @@
       "password": "$2a$10$uqMsxfldpsQEj2f4bqztc.ru4rOE3Da4DMwDllaho8jwx.lSzYvWu",
       "name": "Dante",
       "id": 7
+    },
+    {
+      "email": "2@gmail.com",
+      "password": "$2a$10$DQFvIC9UsSCGbAqJrZDIe.4AX/e17P7XvGbbJcGnx41dmrlDMDtFC",
+      "name": "تست",
+      "id": 8
     }
   ],
-  "posts": []
+  "posts": [
+    {
+      "phonenumber": "09394261051",
+      "location": {
+        "latitude": 35.73648044300146,
+        "longitude": 51.31377410260029
+      },
+      "address": "تهران خیابان امام زرین کوچه 1 پلاک 32 واحد 3",
+      "description": "تست تستس تست تست",
+      "userId": 7,
+      "author": "Dante",
+      "id": 1
+    },
+    {
+      "phonenumber": "09394261051",
+      "location": {
+        "latitude": 35.72129098165948,
+        "longitude": 51.33214186993428
+      },
+      "address": "تست آدرس",
+      "description": "تست تست تست",
+      "userId": 7,
+      "author": "Dante",
+      "id": 2
+    },
+    {
+      "phonenumber": "09394261051",
+      "location": {
+        "latitude": 35.72129098165948,
+        "longitude": 51.33214186993428
+      },
+      "address": "تست آدرس",
+      "description": "تست تست تست",
+      "userId": 7,
+      "author": "Dante",
+      "id": 3
+    },
+    {
+      "phonenumber": "09394261051",
+      "location": {
+        "latitude": 35.72129098165948,
+        "longitude": 51.33214186993428
+      },
+      "address": "تست آدرس",
+      "description": "تست تست تست",
+      "userId": 7,
+      "author": "Dante",
+      "id": 4
+    },
+    {
+      "phonenumber": "09394261051",
+      "location": {
+        "latitude": 35.72129098165948,
+        "longitude": 51.33214186993428
+      },
+      "address": "تست آدرس",
+      "description": "تست تست تست",
+      "userId": 7,
+      "author": "Dante",
+      "id": 5
+    },
+    {
+      "phonenumber": "09394261051",
+      "location": {
+        "latitude": 35.72129098165948,
+        "longitude": 51.33214186993428
+      },
+      "address": "تست آدرس",
+      "description": "تست تست تست",
+      "userId": 7,
+      "author": "Dante",
+      "id": 6
+    },
+    {
+      "phonenumber": "09394261051",
+      "location": {
+        "latitude": 35.72129098165948,
+        "longitude": 51.33214186993428
+      },
+      "address": "تست آدرس",
+      "description": "تست تست تست",
+      "userId": 7,
+      "author": "Dante",
+      "id": 7
+    },
+    {
+      "phonenumber": "09394261051",
+      "location": {
+        "latitude": 35.72129098165948,
+        "longitude": 51.33214186993428
+      },
+      "address": "تست آدرس",
+      "description": "تست تست تست",
+      "userId": 7,
+      "author": "Dante",
+      "id": 8
+    },
+    {
+      "phonenumber": "09394261051",
+      "location": {
+        "latitude": 35.72129098165948,
+        "longitude": 51.33214186993428
+      },
+      "address": "تست آدرس",
+      "description": "تست تست تست",
+      "userId": 7,
+      "author": "Dante",
+      "id": 9
+    },
+    {
+      "phonenumber": "09394261051",
+      "location": {
+        "latitude": 35.72129098165948,
+        "longitude": 51.33214186993428
+      },
+      "address": "تست آدرس",
+      "description": "تست تست تست",
+      "userId": 7,
+      "author": "Dante",
+      "id": 10
+    },
+    {
+      "phonenumber": "09394261051",
+      "location": {
+        "latitude": 35.72129098165948,
+        "longitude": 51.33214186993428
+      },
+      "address": "تست آدرس",
+      "description": "تست تست تست",
+      "userId": 7,
+      "author": "Dante",
+      "id": 11
+    },
+    {
+      "phonenumber": "09394261051",
+      "location": {
+        "latitude": 35.72129098165948,
+        "longitude": 51.33214186993428
+      },
+      "address": "تست آدرس",
+      "description": "تست تست تست",
+      "userId": 7,
+      "author": "Dante",
+      "id": 12
+    }
+  ]
 }

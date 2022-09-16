@@ -20,6 +20,7 @@ interface Props {
   rightElement?: ReactNode;
   requiredMark?: boolean;
   onChange?: any;
+  required?: boolean | string;
 }
 
 const TextInput: FC<Props> = ({
@@ -39,11 +40,17 @@ const TextInput: FC<Props> = ({
   rightElement,
   onChange,
   requiredMark,
+  required,
 }) => {
   const {
     field,
     fieldState: { error },
-  } = useController({ name, control, defaultValue: "" });
+  } = useController({
+    name,
+    control,
+    defaultValue: "",
+    rules: { required: required },
+  });
 
   useEffect(() => {
     if (defaultValue && defaultValue !== field.value)

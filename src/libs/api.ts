@@ -1,3 +1,6 @@
 import { axios } from ".";
 
-export const authHandler = (url: string, body: any) => axios.post(url, body);
+export const postRequestHandler = (url: string, body: any) =>
+  axios.post(url, body);
+
+// export const createPostHandler = (url:string, body:any) => axios.post
