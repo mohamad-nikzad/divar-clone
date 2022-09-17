@@ -6,7 +6,7 @@ import { ToastContainer } from "react-toastify";
 import { QueryClientProvider, QueryClient } from "react-query";
 import "./assets/styles/global.css";
 import "react-toastify/dist/ReactToastify.css";
-import { ReactQueryDevtools } from "react-query/devtools";
+// import { ReactQueryDevtools } from "react-query/devtools";
 import { ManagedModal } from "./container";
 
 const queryClient = new QueryClient({
@@ -38,7 +38,7 @@ ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
           draggable
         />
         <ManagedModal />
-        <ReactQueryDevtools initialIsOpen={false} />
+        {/* <ReactQueryDevtools initialIsOpen={false} /> */}
       </QueryClientProvider>
     </BrowserRouter>
   </React.StrictMode>
