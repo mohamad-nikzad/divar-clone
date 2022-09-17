@@ -13,7 +13,7 @@ yarn
 Then, start json-serve:
 
 ```bash
-npm start:server
+npm run start:server
 # or
 yarn start:server
 ```
@@ -21,7 +21,7 @@ yarn start:server
 And last, open new terminal and start dev server:
 
 ```bash
-npm dev
+npm run dev
 # or
 yarn dev
 ```

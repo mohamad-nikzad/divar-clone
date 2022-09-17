@@ -6,7 +6,7 @@ export const ResponseErrorHandler = (error: AxiosError) => {
   const response: any = error?.response?.data;
   const status: number | undefined = error?.response?.status;
   let message: string | undefined = "";
-  const serverMessage: unknown = error.response?.data;
+  const serverMessage: unknown = error.response?.data || error.message;
 
   // return server error message if its available
   if (typeof serverMessage === "string" && serverMessage !== "")

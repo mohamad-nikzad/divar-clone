@@ -36,18 +36,25 @@ const Home = () => {
       <Navbar />
       <div className="container mx-auto p-4">
         <PageTitle title="آگهی ها" showGoBack={false} />
-        {posts.isFetching
-          ? "در حال بارگذاری . . . "
-          : posts.isFetched &&
-            posts?.data?.data.length > 0 && (
-              <>
-                <PostsList posts={posts?.data?.data} />
-                <PostsPagination
-                  handlePagination={handlePagination}
-                  paginationData={paginationData}
-                />
-              </>
-            )}
+        {posts.isError && (
+          <h3 className="font-bold">
+            در برقراری ارتباط با سرور خطایی رخ داده است !
+          </h3>
+        )}
+        {posts.isFetching ? (
+          <h3 className="font-bold">در حال بارگذاری . . . </h3>
+        ) : (
+          posts.isFetched &&
+          posts?.data?.data.length > 0 && (
+            <>
+              <PostsList posts={posts?.data?.data} />
+              <PostsPagination
+                handlePagination={handlePagination}
+                paginationData={paginationData}
+              />
+            </>
+          )
+        )}
       </div>
     </div>
   );
