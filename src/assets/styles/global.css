@@ -106,4 +106,34 @@
   .tooltip.tooltip-hidden::after {
     @apply !hidden;
   }
+
+  div.z-50.opacity-100.scale-100 {
+    div.leaflet-container {
+      font-family: $fontFamily;
+    }
+    div.leaflet-control-container {
+      & > div.leaflet-control-geosearch.leaflet-geosearch-bar {
+        margin-right: 0;
+        & > form > a {
+          left: 0;
+          right: unset;
+        }
+      }
+    }
+  }
+}
+
+.leaflet-control-container .leaflet-control-geosearch {
+  font-family: Vazir;
+  direction: rtl;
+  margin-right: 0;
+}
+
+.leaflet-control-container .leaflet-control-geosearch form input {
+  padding-right: 0.5rem;
+}
+
+.leaflet-control-container .leaflet-control-geosearch form a {
+  left: 0;
+  right: unset;
 }

@@ -8,7 +8,10 @@ import {
   TileLayer,
   useMapEvents,
 } from "react-leaflet";
+import SearchControl from "@/container/map/SearchControl";
 import "leaflet/dist/leaflet.css";
+import "leaflet-geosearch/dist/geosearch.css";
+// import { SearchControl } from "@/container";
 
 interface Props {
   name: string;
@@ -83,6 +86,7 @@ const Textarea: FC<Props> = ({
                   attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
                   url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
                 />
+                <SearchControl onChange={field.onChange} />
                 <MapEvent onChange={field.onChange} />
                 {field.value?.latitude && field.value?.longitude && (
                   <Marker

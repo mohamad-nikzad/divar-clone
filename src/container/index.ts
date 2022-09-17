@@ -14,3 +14,6 @@ export const PostMapItem = lazy(() => import("./post/PostMapItem"));
 export { default as ManagedModal } from "./modal/ManagedModal";
 export const EditPostModal = lazy(() => import("./modal/EditPostModal"));
 export const ConfirmModal = lazy(() => import("./modal/ConfirmModal"));
+
+// map
+export const SearchControl = lazy(() => import("./map/SearchControl"));

@@ -1,13 +1,15 @@
 import { User } from "./user";
 
+export type positionMap = {
+  longitude: number;
+  latitude: number;
+};
+
 export type Post = {
   address: string;
   description?: string;
   id: number;
-  location: {
-    latitude: number;
-    longitude: number;
-  };
+  location: positionMap;
   phonenumber: string;
   userId: number;
   author: string;
@@ -16,10 +18,7 @@ export type Post = {
 export type createPostType = {
   address: string;
   description?: string;
-  location: {
-    latitude: number;
-    longitude: number;
-  };
+  location: positionMap;
   phonenumber: string;
   author: string;
 };
