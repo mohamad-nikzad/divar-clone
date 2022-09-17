@@ -1,6 +1,9 @@
 import { userAtom } from "@/atoms";
-import { LocationArea, Textarea, TextInput } from "@/components";
-import { DevicePhoneMobileIcon } from "@heroicons/react/24/outline";
+import { LocationArea, PageTitle, Textarea, TextInput } from "@/components";
+import {
+  ArrowRightIcon,
+  DevicePhoneMobileIcon,
+} from "@heroicons/react/24/outline";
 import { useAtom } from "jotai";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { Navigate, useNavigate } from "react-router-dom";
@@ -20,7 +23,7 @@ const CreatePost = () => {
     resolver: yupResolver(createPostSchema),
   });
   const createPost = useMutation(
-    (body: any) => postRequestHandler("/posts", body),
+    (body: any) => postRequestHandler("/posts", body, user.accessToken),
     {
       onSuccess: () => {
         navigate("/");
@@ -29,6 +32,10 @@ const CreatePost = () => {
       },
     }
   );
+
+  const goBack = () => {
+    navigate(-1);
+  };
 
   // redirect user to home page if its not logged in
   if (!user) return <Navigate to="/" replace />;
@@ -39,9 +46,11 @@ const CreatePost = () => {
 
   return (
     <div className="flex flex-col">
-      <h1 className="text-3xl text-rose-600 text-bold">افزودن آگهی</h1>
-      <div className="divider" />
-      <form className="flex flex-col" onSubmit={handleSubmit(onSubmit)}>
+      <PageTitle title="ثبت آگهی" />
+      <form
+        className="flex flex-col bg-base-300 p-4 rounded-lg"
+        onSubmit={handleSubmit(onSubmit)}
+      >
         <TextInput
           control={control}
           name="phonenumber"

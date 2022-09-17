@@ -12,6 +12,7 @@ interface Props {
   rows?: number;
   required?: boolean | string;
   requiredMark?: boolean;
+  defaultValue?: any;
 }
 
 const Textarea: FC<Props> = ({
@@ -24,6 +25,7 @@ const Textarea: FC<Props> = ({
   rows,
   required,
   requiredMark,
+  defaultValue,
 }) => {
   const {
     field,
@@ -31,7 +33,7 @@ const Textarea: FC<Props> = ({
   } = useController({
     name,
     control,
-    defaultValue: "",
+    defaultValue: defaultValue,
     rules: { required: required },
   });
 

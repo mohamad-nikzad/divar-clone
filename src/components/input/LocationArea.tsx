@@ -19,6 +19,7 @@ interface Props {
   required?: boolean | string;
   requiredMark?: boolean;
   defaultValue?: unknown;
+  allowScrollZoom?: boolean;
 }
 
 const MapEvent = ({ onChange }: any) => {
@@ -41,6 +42,7 @@ const Textarea: FC<Props> = ({
   required,
   requiredMark,
   defaultValue,
+  allowScrollZoom = true,
 }) => {
   return (
     <div className={clsx("form-control mt-2", containerClassName)}>
@@ -69,6 +71,7 @@ const Textarea: FC<Props> = ({
             >
               <MapContainer
                 className="rounded-lg"
+                scrollWheelZoom={allowScrollZoom}
                 center={{
                   lat: field?.value?.latitude || 35.7219,
                   lng: field?.value?.longitude || 51.3347,

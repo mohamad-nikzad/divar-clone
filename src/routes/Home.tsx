@@ -1,4 +1,5 @@
 import { userAtom } from "@/atoms";
+import { PageTitle } from "@/components";
 import { Navbar, PostsList, PostsPagination } from "@/container";
 import { axios } from "@/libs";
 import { postMetaType } from "@/types/post";
@@ -33,28 +34,8 @@ const Home = () => {
   return (
     <div className="flex flex-col w-full">
       <Navbar />
-      <div className="container max-w-5xl mx-auto p-4">
-        <div className="flex items-center justify-between">
-          <h1 className="md:text-3xl text-2xl text-rose-600 text-bold">
-            آگهی های اخیر
-          </h1>
-          <div
-            className={clsx("tooltip tooltip-right tooltip-error", {
-              "tooltip-hidden": user,
-            })}
-            data-tip={`${!user ? "برای ثبت آگهی باید وارد  شوید" : ""}`}
-          >
-            <Link
-              to="/post/create"
-              className={clsx("btn btn-warning font-bold md:text-lg", {
-                "btn-disabled": !user,
-              })}
-            >
-              ثبت آگهی
-            </Link>
-          </div>
-        </div>
-        <div className="divider" />
+      <div className="container mx-auto p-4">
+        <PageTitle title="آگهی ها" showGoBack={false} />
         {posts.isFetching
           ? "در حال بارگذاری . . . "
           : posts.isFetched &&

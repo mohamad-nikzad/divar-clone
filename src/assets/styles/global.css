@@ -91,12 +91,16 @@
     direction: ltr;
   }
 
+  .container {
+    @apply xl:max-w-5xl mx-auto;
+  }
+
   .btn.loading::before {
     @apply mr-0 !ml-2;
   }
 
   .dropdown-end .dropdown-content {
-    @apply right-[-120px] md:right-0;
+    @apply right-[-135px] top-[40px];
   }
   .tooltip.tooltip-hidden::before,
   .tooltip.tooltip-hidden::after {

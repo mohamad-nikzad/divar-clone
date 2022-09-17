@@ -14,7 +14,7 @@ const Auth: FC<Props> = ({ isAllowed, redirectPath = "/" }) => {
         <div className="mb-4">
           <Link
             to="/"
-            className="text-7xl text-rose-800 font-bold flex justify-center mb-4 w-full text-center"
+            className="md:text-7xl text-5xl text-rose-800 font-bold flex justify-center mb-4 w-full text-center"
           >
             دیــــــــــــوار
           </Link>

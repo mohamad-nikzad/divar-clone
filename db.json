@@ -43,28 +43,22 @@
       "password": "$2a$10$DQFvIC9UsSCGbAqJrZDIe.4AX/e17P7XvGbbJcGnx41dmrlDMDtFC",
       "name": "تست",
       "id": 8
+    },
+    {
+      "email": "3@gmial.com",
+      "password": "$2a$10$C1kO85oa43xMPH/HVj2XWe82SpZykhWe9KqXt.j8qxvKvXTFz6DAy",
+      "name": "محمد نیکزاد",
+      "id": 9
     }
   ],
   "posts": [
     {
       "phonenumber": "09394261051",
       "location": {
-        "latitude": 35.73648044300146,
-        "longitude": 51.31377410260029
-      },
-      "address": "تهران خیابان امام زرین کوچه 1 پلاک 32 واحد 3",
-      "description": "تست تستس تست تست",
-      "userId": 7,
-      "author": "Dante",
-      "id": 1
-    },
-    {
-      "phonenumber": "09394261051",
-      "location": {
         "latitude": 35.72129098165948,
         "longitude": 51.33214186993428
       },
-      "address": "تست آدرس",
+      "address": "تست آدرس wwww",
       "description": "تست تست تست",
       "userId": 7,
       "author": "Dante",
@@ -76,7 +70,7 @@
         "latitude": 35.72129098165948,
         "longitude": 51.33214186993428
       },
-      "address": "تست آدرس",
+      "address": "تست آدرس xx wqeeqw",
       "description": "تست تست تست",
       "userId": 7,
       "author": "Dante",
@@ -124,47 +118,35 @@
         "latitude": 35.72129098165948,
         "longitude": 51.33214186993428
       },
-      "address": "تست آدرس",
+      "address": "تست آدرس آپدیت 3 1",
       "description": "تست تست تست",
       "userId": 7,
       "author": "Dante",
       "id": 7
     },
     {
-      "phonenumber": "09394261051",
+      "description": "شسمنیت شمسنتینتq weqw eq e",
+      "address": "شسنم تیمنشستیمنشستی نمشستی",
       "location": {
-        "latitude": 35.72129098165948,
-        "longitude": 51.33214186993428
+        "latitude": 35.688633573195986,
+        "longitude": 51.24713015928551
       },
-      "address": "تست آدرس",
-      "description": "تست تست تست",
-      "userId": 7,
-      "author": "Dante",
+      "phonenumber": "09122278817",
+      "userId": 8,
+      "author": "تست",
       "id": 8
     },
     {
-      "phonenumber": "09394261051",
+      "phonenumber": "09122278817",
+      "address": "ضصثضصثضصث شسی",
+      "description": "شسی شسی",
       "location": {
-        "latitude": 35.72129098165948,
-        "longitude": 51.33214186993428
+        "latitude": 35.704425893824244,
+        "longitude": 51.298736559692784
       },
-      "address": "تست آدرس",
-      "description": "تست تست تست",
-      "userId": 7,
-      "author": "Dante",
-      "id": 10
-    },
-    {
-      "description": "qwe",
-      "address": "qwe qw",
-      "location": {
-        "latitude": 35.71933983176265,
-        "longitude": 51.31003189191689
-      },
-      "phonenumber": "09394261051",
-      "userId": 7,
-      "author": "Dante",
-      "id": 12
+      "userId": 9,
+      "author": "محمد نیکزاد",
+      "id": 9
     }
   ]
 }
